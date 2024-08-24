@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F2DFAC; /* Light beige background color */
+    color: #333; /* Darker text color for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff; /* White background for the container */
+    border: 2px solid #ddd; /* Light border around container */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for subtle 3D effect */
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #4a90e2; /* Blue color for the title */
+    font-size: 2.5em;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4a90e2; /* Blue color for buttons */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #357abd; /* Darker blue for hover effect */
+    transform: scale(1.05);
+}
+
+.bars-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 400px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.bar {
+    margin: 0 6px; /* Adjusted for wider bars */
+    background-color: #4a90e2; /* Blue color for bars */
+    width: 24px; /* Adjusted for wider bars */
+    transition: height 0.1s;
+}
+
+.bar.active {
+    background-color: #e94e77; /* Pink color when bars are being compared */
+}
+
+.bar.sorted {
+    background-color: #7ed321; /* Green color when bars are in their final position */
+}
